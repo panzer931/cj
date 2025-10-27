@@ -1,0 +1,40 @@
+{
+  "manifest_version": 1,
+  "name": "麦麦轮盘",
+  "version": "1.1.0",
+  "description": "当麦麦捡到一把左轮手枪，试问有没有胆肥的勇士敢来参与这一把死亡游戏，改自乌帕的牛牛轮盘插件，其他插件信息我就不改了，主要修改内容，更新到最新版本，修改中弹台词，自定义触发词，优化修改中弹机率，增加重复参与机制，移除不合理惩罚，",
+  "author": {
+    "name": "晴空改编乌帕的插件",
+    "url": "https://github.com/ShiinaWhite"
+  },
+  "license": "AGPL-v3.0",
+  "host_application": {
+    "min_version": "0.8.0"
+  },
+  "homepage_url": "https://github.com/ShiinaWhite/MaiBot-Roulette-Plugins",
+  "repository_url": "https://github.com/ShiinaWhite/MaiBot-Roulette-Plugins",
+  "keywords": ["game", "russian-roulette", "moderation", "entertainment", "group-management"],
+  "categories": ["Game", "Moderation", "Entertainment"],
+  "default_locale": "zh-CN",
+  "locales_path": "_locales",
+  
+  "plugin_info": {
+    "is_built_in": false,
+    "plugin_type": "game",
+    "components": [
+      {
+        "type": "command",
+        "name": "russian_roulette",
+        "description": "参与麦麦轮盘游戏，随机禁言一名参与者",
+        "pattern": "^麦麦开枪$"
+      }
+    ],
+    "features": [
+      "多人参与的俄罗斯轮盘游戏",
+      "随机禁言参与者",
+      "游戏超时自动结束",
+      "可配置游戏参数",
+      "完整的错误处理和日志记录"
+    ]
+  }
+}
